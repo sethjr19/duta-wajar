@@ -3,16 +3,9 @@ import Main from '../app/components/main'
 import NavBar from "./components/navbar";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { poppins } from './fonts';
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const poppins_init = Poppins({
-    subsets: ['latin'],
-    display: 'swap',
-    variable: '--font-poppins',
-    weight: ['300', '600']
-})
 
 export default function RootLayout({
   children,
@@ -21,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins_init.variable}`}>
+      <body className={`${poppins.className}`}>
         <div className="flex">
           {children}      
         </div>

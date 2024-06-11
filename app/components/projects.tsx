@@ -3,7 +3,7 @@
 import React from 'react';
 import projects from '../data'
 import Card from '../components/card'
-import { poppins_init } from '../layout';
+import { poppins } from '../fonts';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -16,7 +16,7 @@ const Projects: React.FC = (props:any) => {
     <section className='w-full flex'>
         <div className='hidden  md:flex w-full flex-col mt-[3rem] lg:mt-[5rem] px-[2rem] md:px-[5rem] items-center '>
           <div className='flex items-center justify-center sm:items-center md:items-start w-full'>
-            <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 ${poppins_init.className}`}>Our Projects</h2>
+            <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 ${poppins.className}`}>Our Projects</h2>
           </div>
             
             <div className="flex flex-wrap justify-center gap-8 mt-[5rem] ">
@@ -36,7 +36,7 @@ const Projects: React.FC = (props:any) => {
           {/* mobile swiper  */}
         <div className='md:hidden flex w-full flex-col mt-[3rem] lg:mt-[5rem] px-[2rem] md:px-[5rem] items-center '>
           <div className='flex items-center justify-center sm:items-center md:items-start w-full'>
-            <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 ${poppins_init.className}`}>Our Projects</h2>
+            <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 ${poppins.className}`}>Our Projects</h2>
           </div>
             
           <div className="w-full mt-[5rem]">

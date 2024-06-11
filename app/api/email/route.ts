@@ -13,11 +13,11 @@ export async function POST(req: NextRequest, res: NextResponse) {
     try 
   {
     const { data } = await resend.emails.send({
-        from: 'New Enquiry <onboarding@resend.dev>',
-        to: ['dwajar2@yahoo.com'],
+        from: 'Seth <onboarding@resend.dev>',
+        to: ['sethyap1903@gmail.com'],
         subject: 'New Enquiry',
         text: message as string,
-        reply_to: email as string,
+      reply_to: email as string,
   });
   console.log('Email sent successfully:', name);
   return NextResponse.json(data, { status: 200 });

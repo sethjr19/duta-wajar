@@ -23,6 +23,7 @@ const FormSection: React.FC = (props:any) => {
             setName('');
             setEmail('');
             setMessage('');
+            console.log('success!')
         } else {
             setStatus('FAILED');
         }
@@ -30,19 +31,24 @@ const FormSection: React.FC = (props:any) => {
 
   return (
     <section className='w-full'>
-        <div className='relative px-20 h-full'>
-            <img  className='absolute top-0 left-0 h-[100vh] w-[100vw]' src="formsection.jpeg" alt="" />
-        <div className='relative px-20 py-10'>
+        <div className='relative h-full'>
+            <img  className='absolute top-0 left-0 h-full w-[100vw]' src="formsection.jpeg" alt="" />
+        <div className='relative px-5 lg:px-20 py-10'>
            <div className='w-[100%] grid grid-cols-1 gap-x-16 gap-y-10 md:grid-cols-2 xl:grid-cols-[minmax(0,_1fr)_1.1fr]'>
            
             <div>
-                <h2 className='text-[5rem] font-bold text-white '>Lets Work Together</h2>
-                <p className='text-[1.5rem] mt-5 text-white'>Let's collaborate and innovate, turning fresh ideas into tangible outcomes. Together, we'll make things happen.</p>
+                <h2 className='text-[2rem] md:text-[5rem] font-bold text-white '>Lets Work Together</h2>
+                <p className='text-[1rem] md:text-[1.5rem] mt-5 text-white'>Let's collaborate and innovate, turning fresh ideas into tangible outcomes. Together, we'll make things happen.</p>
             </div>
             <div>
                 <div className='flex flex-col justify-center items-center opacity-95 bg-white rounded-xl shadow-xl p-[2rem] lg:p-[4rem] min-w-[20rem]'>
                     <h2 className='text-[2rem] lg:text-[3rem] font-semibold border-yellow-500 border-b-[3px] mb-[2rem]'>Send us an enquiry</h2>
-                    <form className="max-w-xl w-full h-[30rem] p-4" onSubmit={handleSubmit}>
+                    {status === 'SUCCESS' ? (
+                        <div className="text-center h-[30rem] shadow-lg p-[3rem]">
+                        <h3 className="text-[2rem] font-semibold">Your form has been submitted!</h3>
+                        <p className="mt-4 text-lg">Thank you for your enquiry. We will get back to you soon.</p>
+                      </div>
+                    ) : (<form className="max-w-xl w-full h-[30rem] p-4" onSubmit={handleSubmit}>
                         <div className="mb-4">
                         <label className="block text-gray-700">Name</label>
                         <input
@@ -83,6 +89,7 @@ const FormSection: React.FC = (props:any) => {
                         Submit
                         </button>
                     </form>
+                )}    
                 </div>
             </div>
         </div> 

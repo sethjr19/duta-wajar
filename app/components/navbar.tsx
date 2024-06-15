@@ -29,11 +29,11 @@ const NavBar: React.FC = () => {
   return (
     <motion.div className='fixed z-50 top-0 w-full' style={{ backgroundColor }}
     transition={{ duration : 0.5}}>
-    <nav className={` text-white border-b-[0.1px] border-opacity-55 border-white flex justify-between p-[2rem] h-[6rem]`}>
-        <div className='flex justify-center items-center'>
+    <nav className={` text-white border-b-[0.1px] border-opacity-55 border-white flex justify-between h-[6rem] relative `}>
+      <div className={`flex justify-center items-center p-[2rem]`}>
           <img src="logov3.png" alt="Logo" height={5} width={50} />  
         </div>
-        <div className='hidden md:block '>
+        <div className='hidden md:flex h-full justify-center items-center p-[2rem]'>
           <ul className='flex gap-[3rem]'> 
             <li><Link href="/">Home</Link></li>
             <li><Link href="/about">About Us</Link></li>
@@ -41,26 +41,27 @@ const NavBar: React.FC = () => {
           </ul>
         </div>
       
-
-      <div className="-mr-2 flex md:hidden">
+      
+      <div className="-mr-2 flex md:hidden w-full flex-col ">
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-400 hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+              className={`h-full ml-auto  inline-flex ${isOpen ? 'bg-black w-full p-[3rem]' : 'bg-transparent w-[5rem]'} items-center justify-center p-2 text-white`}
             >
               <svg className="h-8 w-8" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
               </svg>
             </button>
-        </div>
-
-        <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-          <div className='h-[5rem] w-[5rem] bg-white'>
-            <Link href="/contact">Contact Us</Link>
-            <Link href="/contact">Contact Us</Link>
+            <div className={`${isOpen ? 'block' : 'hidden'} md:hidden  w-full `}>
+          <div className='h-[100vh] bg-black text-white flex flex-col items-center gap-8 pt-4'>
+            <Link href="/">Home</Link>
+            <Link href="/about">About Us</Link>
             <Link href="/contact">Contact Us</Link>
           </div>
         </div>
+      </div>
+
+        
     </nav>
 
 

@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Whatwedo from "./components/whatwedo";
 import FormSection from "./components/formsection";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Projects></Projects>
       <Whatwedo></Whatwedo>
       <FormSection></FormSection>
+      <Footer></Footer>
     </main>
   );
 }

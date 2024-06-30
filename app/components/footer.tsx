@@ -6,7 +6,7 @@ import { FaInstagram, FaFacebook} from "react-icons/fa";
 
 const Footer: React.FC = (props:any) => {
   return (
-    <section className='w-full bg-yellow-500 mt-[8rem]'>
+    <section className='w-full bg-black mt-[8rem]'>
         <div className='w-full border-y-black border-1'>
             {/* inner div */}
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-5 mx-[5rem] lg:mx-[15rem] my-[2rem] lg:my-[5rem] text-white'>
@@ -22,13 +22,14 @@ const Footer: React.FC = (props:any) => {
                 </div>
                 <div className='mt-3'>
                     <h2 className='font-bold text-md mb-4'>About us</h2>
-                    <p className='text-sm'>GFT is a team of IT and Construction experts, and with their diverse capabilities</p>
+                    <p className='text-sm'>We Are A G7 Construction Company Registered With Cidb, Spkk, Pkk, Sijil Penyiap Kkr Malaysia And Sijil Akuan Pendaftaran Syarikat Bumiputera Kementerian Kewangan Malaysia. We Had Sucessfully Completed A Range Of Projects From Jkr Malaysia, Jkr Selangor, Jps Wilayah Persekutuan, The Mrt2, Lrt3, Petronas Project At Pengerang Under Wabag- Muhibbah Jv And Pertrofac E&c Sdn. Bhd.
+                    </p>
                 </div>
                 <div className='mt-3'>
                     <h2 className='font-bold text-md mb-4'>Contact us</h2>
-                    <p className='text-sm mb-3'>No. 18-2, Jalan 4/62A, Bandar Menjalara, Kepong, Kuala Lumpur, 52200, Kuala Lumpur, WP Kuala Lumpur, 52200</p>
-                    <p className='text-sm underline'>+60 12-255020302</p>
-                    <p className='text-sm underline'>dwajar@yahoo.com</p>
+                    <p className='text-sm mb-3'>B-3-17, Block B, Ativo Plaza, Bandar Sri Damansara, 52200 Kuala Lumpur.</p>
+                    <p className='text-sm underline'>Tel : 03-6270 9323</p>
+                    <p className='text-sm underline'>Email : dwajar2@yahoo.com</p>
                 </div>
                 <div className='mt-3'>
                     <h2 className='font-bold text-md mb-4'>Follow us</h2>

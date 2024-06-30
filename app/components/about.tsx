@@ -12,7 +12,18 @@ const About: React.FC = (props:any) => {
         <div className='lg:pl-[5rem] mt-[3rem] max-w-[50rem]'>
             <div className='p-5'>
                 <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 text-center lg:text-start max-w-[10rem] ${poppins.className}`}>About Us</h2>
-                <p className='mt-[3rem] text-[20px]'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>    
+                <p className='mt-[3rem] text-[15px] font-semibold'>Duta Wajar Sdn Bhd is Established on 22nd March, 1999 and is Based in Kuala Lumpur, Malaysia.<br/>
+                </p>    
+                <p className='mt-[1rem] text-[15px] font-semibold'>We Are a G7 Construction Company Registered With CIDB, SPKK, PKK, Sijil Penyiap KKR Malaysia and Sijil Akuan Pendaftaran Syarikat Bumiputera Kementerian Kewangan Malaysia. </p>
+                <p className='mt-[1rem] text-[15px] font-semibold'>
+                We Had Sucessfully Completed a Range of Projects From JKR Malaysia, JKR Selangor, JPS Wilayah Persekutuan, the Mrt2, Lrt3, Petronas Project at Pengerang Under Wabag Muhibbah JV Sdn. Bhd. and Petrofac E&c Sdn. Bhd.
+                </p>
+                <p className='mt-[1rem] text-[15px] font-semibold'>
+                We Are Also Capable of Undertaking Infrastructure and Civil Works. 
+                </p>
+                <p className='mt-[1rem] text-[15px] font-semibold'>
+                  If You Require a Competent and Professional Builder for Your Project, Feel Free to Contact Us for a Quote.
+                </p>
             </div>
         </div>
 

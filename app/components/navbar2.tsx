@@ -35,9 +35,11 @@ const NavBar2: React.FC = () => {
         </div>
         <div className='hidden md:flex h-full justify-center items-center p-[2rem]'>
           <ul className='flex gap-[3rem]'> 
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About Us</Link></li>
-            <li><Link href="/contact">Contact Us</Link></li>
+          <Link href="/">Home</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/certs">Certificates</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/contact">Contact Us</Link>
           </ul>
         </div>
       
@@ -54,8 +56,10 @@ const NavBar2: React.FC = () => {
             </button>
             <div className={`${isOpen ? 'block' : 'hidden'} md:hidden  w-full `}>
           <div className='h-[100vh] bg-black text-white flex flex-col items-center gap-8 pt-4'>
-            <Link href="/">Home</Link>
+          <Link href="/">Home</Link>
             <Link href="/about">About Us</Link>
+            <Link href="/certs">Certificates</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/contact">Contact Us</Link>
           </div>
         </div>

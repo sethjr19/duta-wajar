@@ -7,11 +7,13 @@ const About: React.FC = (props:any) => {
     <section className='w-full  '>
     <div className="flex w-[100%] flex-col sm:flex-col lg:flex-row md:flex-col lg:mt-[7rem]">
         <div className='relative flex justify-center items-center w-full md:w-[50%] z-20 text-center'>
-            <img src="about-img.jpg" alt="About us" className="object-cover w-full h-[10rem]  md:m-0 lg:h-[30rem] lg:rounded-tr-[5rem] min-w-[30rem]" />
+            <img src="about-img.jpg" alt="About us" className="object-cover hidden lg:inline-block h-[10rem] md:m-0 lg:h-[30rem] lg:rounded-tr-[5rem] lg:w-full" />
         </div>
         <div className='lg:pl-[5rem] mt-[3rem] max-w-[50rem]'>
             <div className='p-5'>
-                <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 text-center lg:text-start max-w-[10rem] ${poppins.className}`}>About Us</h2>
+                <div className='flex justify-center md:justify-start'>
+                  <h2 className={`text-4xl border-b-[3px] border-yellow-300 pb-3 lg:text-start max-w-[10rem] w-full  ${poppins.className}`}>About Us</h2>
+                </div>  
                 <p className='mt-[3rem] text-[15px] font-semibold'>Duta Wajar Sdn Bhd is Established on 22nd March, 1999 and is Based in Kuala Lumpur, Malaysia.<br/>
                 </p>    
                 <p className='mt-[1rem] text-[15px] font-semibold'>We Are a G7 Construction Company Registered With CIDB, SPKK, PKK, Sijil Penyiap KKR Malaysia and Sijil Akuan Pendaftaran Syarikat Bumiputera Kementerian Kewangan Malaysia. </p>

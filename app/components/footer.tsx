@@ -6,7 +6,7 @@ import { FaInstagram, FaFacebook} from "react-icons/fa";
 
 const Footer: React.FC = (props:any) => {
   return (
-    <section className='w-full bg-black mt-[8rem]'>
+    <section className='w-full bg-black mt-[3rem] md:mt-[8rem]'>
         <div className='w-full border-y-black border-1'>
             {/* inner div */}
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-5 mx-[5rem] lg:mx-[15rem] my-[2rem] lg:my-[5rem] text-white'>

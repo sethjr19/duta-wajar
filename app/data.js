@@ -171,13 +171,6 @@ export const projects2 = [
       link: '/projects/project-two',
       date: '12 May 2024'
     },
-    {
-      title: 'Kg. Sg. Chinchin, Gombak',
-      description: 'Bridge works at Kg. Sg. Chinchin, Gombak for J.P.S.',
-      image: 'project15.jpg',
-      link: '/projects/project-two',
-      date: '12 May 2024'
-    },
   // Add more projects here
 ];
 

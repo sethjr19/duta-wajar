@@ -22,7 +22,7 @@ const Footer: React.FC = (props:any) => {
                 </div>
                 <div className='mt-3'>
                     <h2 className='font-bold text-md mb-4'>About us</h2>
-                    <p className='text-sm'>We Are A G7 Construction Company Registered With Cidb, Spkk, Pkk, Sijil Penyiap Kkr Malaysia And Sijil Akuan Pendaftaran Syarikat Bumiputera Kementerian Kewangan Malaysia. We Had Sucessfully Completed A Range Of Projects From Jkr Malaysia, Jkr Selangor, Jps Wilayah Persekutuan, The Mrt2, Lrt3, Petronas Project At Pengerang Under Wabag- Muhibbah Jv And Pertrofac E&c Sdn. Bhd.
+                    <p className='text-sm'>We Are a G7 Construction Company Registered With CIDB, SPKK, PKK, Sijil Penyiap KKR Malaysia and Sijil Akuan Pendaftaran Syarikat Bumiputera Kementerian Kewangan Malaysia.
                     </p>
                 </div>
                 <div className='mt-3'>
